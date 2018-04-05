@@ -1,8 +1,8 @@
 FROM debian:stretch
 
-LABEL image="diginc/pi-hole:debian_amd64"
-LABEL maintainer="adam@diginc.us"
-LABEL url="https://www.github.com/diginc/docker-pi-hole"
+LABEL image="ichabond/pi-hole:debian_amd64"
+LABEL maintainer="tom@strickx.com"
+LABEL url="https://github.com/Ichabond/docker-pi-hole"
 
 ENV TAG debian
 ENV ARCH amd64

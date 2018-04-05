@@ -19,7 +19,7 @@ which systemctl && mv "$(which systemctl)" /bin/no_systemctl
 which debconf-apt-progress && mv "$(which debconf-apt-progress)" /bin/no_debconf-apt-progress
 
 # Get the install functions
-wget -O "$PIHOLE_INSTALL" https://raw.githubusercontent.com/pi-hole/pi-hole/${CORE_TAG}/automated%20install/basic-install.sh
+wget -O "$PIHOLE_INSTALL" https://raw.githubusercontent.com/Ichabond/pi-hole/master/automated%20install/basic-install.sh
 PH_TEST=true . "${PIHOLE_INSTALL}"
 
 # Run only what we need from installer
@@ -43,8 +43,8 @@ git clone "${webInterfaceGitUrl}" "${webInterfaceDir}"
 export PIHOLE_INTERFACE=eth0
 export IPV4_ADDRESS=0.0.0.0
 export IPV6_ADDRESS=0:0:0:0:0:0
-export PIHOLE_DNS_1=8.8.8.8
-export PIHOLE_DNS_2=8.8.4.4
+export PIHOLE_DNS_1=1.1.1.1
+export PIHOLE_DNS_2=1.0.0.1
 export QUERY_LOGGING=true
 
 tmpLog="/tmp/pihole-install.log"
